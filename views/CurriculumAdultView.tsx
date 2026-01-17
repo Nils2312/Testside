@@ -53,52 +53,8 @@ export const CurriculumAdultView: React.FC<CurriculumAdultViewProps> = ({ onNavi
           </div>
         </header>
 
-        {/* --- SECTION 1: INTRODUKSJON (50/50 SPLIT) --- */}
-        <section className="relative py-24 md:py-40 border-b border-white/5 bg-[#0c0c0c] animate-fade-in-up opacity-0 [animation-delay:450ms]">
-          <div className="absolute inset-0 pointer-events-none opacity-5">
-            <div className="max-w-[1600px] mx-auto h-full px-6 md:px-12 lg:px-24 flex justify-between">
-              <div className="w-px h-full bg-white"></div>
-              <div className="w-px h-full bg-white hidden lg:block"></div>
-              <div className="w-px h-full bg-white"></div>
-            </div>
-          </div>
-
-          <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-24">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center relative z-10">
-              <div className="order-2 lg:order-1 w-full">
-                <div className="aspect-[3/2] lg:aspect-[4/3] border border-white/10 relative overflow-hidden group shadow-2xl w-full">
-                  <img 
-                    src="/images/15.jpg" 
-                    alt="Voksen Trening" 
-                    className="w-full h-full object-cover brightness-[0.7] group-hover:scale-100 transition-all duration-[2000ms]"
-                  />
-                  <div className="absolute inset-0 bg-jjn-orange/5 mix-blend-overlay" />
-                </div>
-              </div>
-              
-              <div className="order-1 lg:order-2 space-y-10 py-16 lg:py-0 lg:pl-24">
-                <div>
-                  <span className="text-jjn-orange font-black tracking-[0.6em] uppercase text-[10px] mb-4 block">01 / Filosofi</span>
-                  <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">
-                    EN HELHETLIG <br/><span className="text-outline">METODIKK</span>
-                  </h2>
-                </div>
-                
-                <div className="space-y-8 text-gray-400 text-lg md:text-xl font-light leading-relaxed w-full">
-                  <p className="text-white font-medium text-2xl tracking-tight leading-tight max-w-xl">
-                    Ju jitsu i JJN er hovedsakelig selvforsvarsorientert, men rommer hele spekteret av kampkunsten.
-                  </p>
-                  <p className="w-full">
-                    Siden det i praksis ikke finnes grenser for hva som er mulig, har vi valgt tekniske løsninger som bygger på noen grunnleggende ideer.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* --- SECTION 2: PENSUM ARKIV --- */}
-        <section className="relative py-24 md:py-40 bg-[#050505] animate-fade-in-up opacity-0 [animation-delay:600ms]">
+        <section className="relative py-24 md:py-40 animate-fade-in-up opacity-0 [animation-delay:600ms]">
           <div className="absolute inset-0 pointer-events-none opacity-5">
             <div className="max-w-[1600px] mx-auto h-full px-6 md:px-12 lg:px-24 flex justify-between">
               <div className="w-px h-full bg-white"></div>
@@ -109,12 +65,6 @@ export const CurriculumAdultView: React.FC<CurriculumAdultViewProps> = ({ onNavi
           </div>
 
           <div className="max-w-[1600px] mx-auto px-6 md:px-12 lg:px-24 relative z-10">
-            <div className="mb-24">
-              <span className="text-jjn-orange font-black tracking-[0.6em] uppercase text-[10px] mb-4 block">02 / Arkiv</span>
-              <h2 className="text-5xl md:text-8xl font-black text-white uppercase tracking-tighter leading-none">
-                PENSUM <br/><span className="text-outline">& GRADERING</span>
-              </h2>
-            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-l border-white/10 relative z-10">
               {CURRICULUM_ADULTS.map((item, idx) => (
